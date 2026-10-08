@@ -3,9 +3,9 @@ on: [push, pull_request]
 permissions:
   contents: read
 jobs:
-    test:
-      runs-on: ubuntu-latest
+  test:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Compile and run acceptance tests
-          run: bash test.sh
+        run: bash test.sh
